@@ -1,0 +1,6 @@
+#ignore python build files
+*_pycache_
+*migrations
+*_init_.py
+*manage.py
+*db.sqlite3
