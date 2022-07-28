@@ -4,3 +4,4 @@
 *_init_.py
 *manage.py
 *db.sqlite3
+*.DjangoblogVenv
