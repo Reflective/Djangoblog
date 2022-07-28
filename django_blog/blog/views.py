@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-
+#example dictionary
 posts = [
     {
         'author': 'Jungle Wizard',
@@ -17,8 +17,6 @@ posts = [
     },
     
 ]
-
-
 
 # Create your views here. 
 def home(request):
