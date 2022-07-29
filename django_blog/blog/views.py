@@ -10,6 +10,7 @@ from django.views.generic import (
 )
 from .models import Post
 
+
 # homepage
 def home(request):
     context = {"posts": Post.objects.all()}
