@@ -17,12 +17,13 @@ def home(request):
     
     return render(request, 'blog/home.html', context)
 
-#Class based view
+#Class based views
 class PostListView(ListView):
     model = Post
     template_name = 'blog/home.html' #<app>/<model>_<viewtype>.html
     context_object_name = 'posts'
     ordering = ['-date_posted']
+    paginate_by = 2
     
 class PostDetailView(DetailView):
     model = Post
