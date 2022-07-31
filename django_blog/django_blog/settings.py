@@ -27,7 +27,7 @@ environ.Env.read_env()
 SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "brandonpoll.com",
@@ -35,7 +35,7 @@ ALLOWED_HOSTS = [
     "144.126.139.242",
     "localhost",
     "0.0.0.0",
-]
+    ]
 
 
 # Application definition
