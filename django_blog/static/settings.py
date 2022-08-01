@@ -28,16 +28,19 @@ SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+ADMIN_ENABLED = False
 ALLOWED_HOSTS = [
     "brandonpoll.com",
     "www.brandonpoll.com",
     "144.126.139.242",
     "localhost",
     "0.0.0.0",
-    ]
+    "127.0.0.1",
+]
 
+CSRF_TRUSTED_ORIGINS = ["https://*.brandonpoll.com", "https://*.127.0.0.1"]
 
+CSRF_COOKIE_SECURE = True
 # Application definition
 
 INSTALLED_APPS = [
@@ -127,7 +130,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-
 STATIC_ROOT = Path(BASE_DIR, "static")
 
 STATIC_URL = "/static/"

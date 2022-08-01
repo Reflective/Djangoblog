@@ -22,9 +22,9 @@ from django.urls import path, include
 from users import views as user_views
 from django.contrib.auth import views as auth_views
 
+
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    #path("register/", user_views.register, name="register"),
+    # Disable registration// path("register/", user_views.register, name="register"),
     path("profile/", user_views.profile, name="profile"),
     path(
         "login/",
@@ -64,5 +64,16 @@ urlpatterns = [
     ),
     path("", include("blog.urls")),
 ]
+
+
+if settings.ADMIN_ENABLED is True:
+    urlpatterns += (path("admin/", admin.site.urls),)
+
+# Make sure to check image functionality on live site
 if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns = urlpatterns + static(
+        settings.STATIC_URL, document_root=settings.STATIC_ROOT
+    )
+    urlpatterns = urlpatterns + static(
+        settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
+    )
