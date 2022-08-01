@@ -7,10 +7,14 @@ body {
 * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
+  align-content: center;
 }
 
 h1,
-h2,
+h2 {
+  margin-bottom: 2px;
+}
+
 h3,
 h4,
 h5,
@@ -47,7 +51,7 @@ ul {
 .content-section {
   background: #ffffff;
   padding: 10px 20px;
-  border: 7px solid #dddddd;
+  border: 5px solid #3d3d3d;
   border-radius: 3px;
   margin-bottom: 20px;
 
