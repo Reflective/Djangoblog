@@ -2,10 +2,10 @@ body {
   background: #f1f2ef;
   color: #333333;
   margin-top: 5rem;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 * {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
