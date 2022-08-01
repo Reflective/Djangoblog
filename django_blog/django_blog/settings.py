@@ -36,7 +36,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "0.0.0.0",
     ]
-
+CSRF_TRUSTED_ORIGINS = [ 'https://brandonpoll.com']
 
 # Application definition
 
