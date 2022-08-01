@@ -5,6 +5,10 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+* {
+  text-align: center;
+}
+
 h1,
 h2,
 h3,
@@ -62,7 +66,7 @@ a.article-title:hover {
 .article-content {
   white-space: pre-line;
   font-family: sans-serif;
-  text-align: center;
+  ;
 }
 
 .article-img {
@@ -73,8 +77,8 @@ a.article-title:hover {
 
 .article-metadata {
   padding-bottom: 1px;
-  margin-bottom: 4px;
-  border-bottom: 1px solid #e3e3e3
+  margin-bottom: 10px;
+
 }
 
 .article-metadata a:hover {
