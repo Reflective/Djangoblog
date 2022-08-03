@@ -67,4 +67,5 @@ Footer navigation
 Terms
 Privacy
 Sec
-.DjangoblogVenv/pyvenv/
+.DjangoblogVenv/pyvenv/*
+
